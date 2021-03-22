@@ -36,6 +36,9 @@ public class SpawnerCheckerEvents implements Listener  {
     @EventHandler
     public void on(SpawnerSpawnEvent event) {
         CraftCreatureSpawner spawner = (CraftCreatureSpawner) event.getSpawner();
+        if (spawner == null) { // в некоторых случаях бывает null. почему? не знаю
+            return;
+        }
         long chunkKey = asLong(spawner.getX() >> 4, spawner.getZ() >> 4);
         if (chunks.contains(chunkKey)) {
             return; // уже проверяли за последний период времени
