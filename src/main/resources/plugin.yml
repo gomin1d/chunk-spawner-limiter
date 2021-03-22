@@ -1,0 +1,10 @@
+name: ChunkSpawnerLimiter
+version: ${project.version}
+main: ua.lokha.chunkspawnerlimiter.Main
+
+# Кодил это? Впиши себя сам
+authors: [lokha]
+
+commands:
+  chunkspawnerlimiter:
+    permission: chunkspawnerlimiter.command

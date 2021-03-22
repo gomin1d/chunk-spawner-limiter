@@ -1,0 +1,13 @@
+# /chunkspawnerlimiter reload - перезагрузить этот конфиг, право chunkspawnerlimiter.command
+
+# лимит длины чанка
+limit-spawners: 4
+
+# период запуска таймера проверки чанков на длину
+period-ticks: 200
+
+# писать в лог предупреждение, если проверка чанков заняла больше указанного времени
+check-warn-time-millis: 1
+
+# сообщение для всех игроков, кто находился рядом с удаленным спавнером
+message: "&cРядом с вами был удален спавнер, не помещайте в чанк больше 4 спавнеров. A spawner has been removed near you, do not place more than 4 spawners in a chunk."
